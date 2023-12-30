@@ -1,0 +1,81 @@
+/* Global Settings */
+
+body		{background-color: #fff;
+		 color: black;
+		 font-family: Times New Roman, Times, serif
+		}
+
+a		{color: red;
+		}
+
+a:hover		{color: black;
+		}
+
+/* The Navigation Menu */
+
+#menubar	{background-color: black;
+		}
+
+#menubar a	{
+		 text-decoration: none;
+		 padding: 1pt 5pt 1pt 5pt;
+		 letter-spacing: 1pt;
+		}
+
+a.navitem	{font-family: Verdana, Arial, Sans Serif;
+		 color: #F00;
+		 background-color: #000;
+		 font-size: 16pt;
+		 line-height: 24pt;
+		 font-weight: normal;
+		 font-style: none;
+		}
+
+a.navhere	{font-family: Times New Roman, Times, serif;
+		 color: #F00;
+		 background-color: #FFF;
+		 font-size: 60pt;
+		 line-height: 120pt;
+		 font-weight: bold;
+		 font-style: italic;
+		}
+
+/* Settings for the rush section -- Mostly div ids */
+
+.rushicon		{display: inline;
+			 margin: 0px;
+			 float:right;}
+
+#rushtitle		{font-size: 50pt;
+			 margin: 0px;
+			 padding: 0px;
+			 border: 0px;
+			 background-color:#F00;
+			}
+
+#rushsplash		{display: block;
+			 position: relative;
+			 text-align: center;
+			 float: right;
+			 width: 30%;
+			}
+
+#rushtext		{display: block;
+			 position: relative;
+			 text-align: center;
+			 float: right;
+			 width:25%;
+			}
+
+#rushtext p		{border: 2px solid red;
+			 padding: 1px;
+			}
+
+#rushtext li		{text-align: left;}
+#rushtext ul		{list-style: square;}
+
+#rushschedule		{display: block;
+			 position: relative;
+			 float: left;
+			 width: 70%;
+			}

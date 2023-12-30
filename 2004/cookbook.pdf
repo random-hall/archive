@@ -1,0 +1,504 @@
+% Compiled by: Shawn Westerdale
+% J. Arthur's Cookbook: The Nice and Accurate Advices of J. Arthur Random, Dorm
+
+\documentclass[10pt,oneside]{article}
+\usepackage{graphics}
+\usepackage[pdftex]{graphicx}
+\usepackage{hyperref}
+\usepackage{xifthen}
+
+\newcounter{subthingy}[section]
+\newcommand{\contributor}{}
+
+%usage: \begin{subpart}[optional short name for TOC]{name}{list of contributors}
+\newenvironment{subpart}[3][]{
+  \renewcommand{\contributor}{#3}
+  \stepcounter{subthingy}
+  \ifthenelse{\isempty{#1}}{
+  \noindent\underline{\sc{\thesection.\thesubthingy\hspace{10pt}#2}}\addcontentsline{toc}{subsection}{{\numberline {\thesection.\thesubthingy} #2}}}{
+  \noindent\underline{\sc{\thesection.\thesubthingy\hspace{10pt}#2}}\addcontentsline{toc}{subsection}{{\numberline {\thesection.\thesubthingy} #1}}
+}
+  \vspace{7pt}
+  
+}{
+  \begin{flushright}\scriptsize{\contributor}\end{flushright}
+}
+\newcommand{\email}[1]{\href{mailto:#1}{\nolinkurl{#1}}}
+
+\begin{document}
+\begin{titlepage}
+\begin{center}
+\includegraphics[scale=.556]{./ozok.pdf}
+\hrule
+\vspace{.4 cm}
+{\LARGE J. Arthur's Cookbook}
+\vspace{.4 cm}
+\hrule
+\vspace{.2 cm}
+\emph{{\textsc{Written By:}} the accumulated wisdom of Randomites}
+\vfill
+{\large For the Class of 2019}
+\end{center}
+\end{titlepage}
+
+\begin{centering}
+\begin{Large}
+J. Arthur's Cookbook
+\end{Large}
+\\
+\dotfill
+\\
+\begin{footnotesize}
+\hfill
+\textit{The Nice and Accurate Advices of J. Arthur Random, Dorm}
+\hfill
+\end{footnotesize}
+\end{centering}
+\setcounter{tocdepth}{4}\tableofcontents\newpage
+
+\setcounter{section}{0}
+\section{Prelude}
+Welcome to MIT\@! Welcome to Random Hall! And all that other stuff. Anyway, there are a lot of useful things to know when living at MIT, and while we considered letting you all figure it out for yourself, a bunch of helpful upperclassmen decided to be nice and give you all a heads up on surviving the 'tvte (hah, don't worry: it'll still eat you alive---we're just trying to make it as painless as possible). Anyway, enjoy! And if you have any questions that aren't answered in this booklet, don't hesitate to ask an upperclassman. Even the ones that bite like to be helpful.
+
+
+\section{Health}
+Your health is important. It is more important than your grades. It is more important than your social life. Remember to take care of yourself.\\
+
+\begin{subpart}{MIT Medical}{mcreedy, zev, kresh426}
+If you get sick, you should go to MIT Medical. If you imbibe too much of certain substances, and are getting sick from it, you should go to MIT Medical (don't worry; MIT Medical has a policy of not asking any tricky questions if these situations happen to arise, and you don't need to worry about getting in trouble with authorities or your parents). If it's an emergency, you can dial 100 (from on campus) or dial 617-253-1212 from any non-campus phone. In fact, put that number into your phone right now. This will bring the MIT ambulance, which is free and can take you to MIT Medical (which has a nurse on duty and a doctor on call all night, and which for many things is free for students). \emph{Do not} call a non-MIT ambulance, as they are very expensive and have to take you to Mass General, which has a multi-hour wait for the emergency room and is also expensive. 
+
+If you call the MIT ambulance, but a different ambulance shows up, they will take you to a hospital instead of MIT Medical. They will also send you a huge bill. However, if you called the MIT ambulance and they \emph{could} have transported you, but didn't, then you can get MIT to pay for the ambulance bill. Also, if you need to get to Medical or a hospital, can't quite get there on your own, but don't need urgent medical attention, calling a taxi or asking a GRT/housemaster to drive you is fine. A Medlink can also give you a taxi pass.
+
+If you have a medical problem that can't wait until business hours but you don't need an ambulance, you can call urgent care for medical advice. Their number is (617)253-4481. Again, if you are advised to go to medical, calling a taxi or asking the GRT or housemaster to drive you is a good option.
+\end{subpart}
+
+\begin{subpart}{Medlinks}{mcreedy, dukhovni}
+There are people known as Medlinks in every dorm. If you have some mild health issue, like a cut or a stomach ache, they are trained so that they know what to do for it. (In fact, YOU can get trained to be a Medlink, too!) If you have a more serious problem, they can assist in getting you help. As of Fall 2015, Random's medlinks are Lane Gunderman in 325 on Clam, Molly Schmidt in 245 and Sophia Tigges in 235s on Black Hole, and Lilly Chin in 435 on Pecker.
+\end{subpart}
+
+\begin{subpart}{Mental Health}{mcreedy, catherio, kresh426}
+Just like with physical health, if you let your mental health get run down, it will have a major adverse effect on your classes. So if you start feeling stressed out, or you're having trouble sleeping, or you have any other problem that is getting in the way of studying (or doing the things that keep you from cracking from all the studying), then get in touch with the MIT mental health center. There is \emph{no} shame in going to Mental Health, and you should \emph{not} be concerned that your issues are ``not bad enough'' to go. You certainly don't have to have a defineable mental disorder to go see them or to benefit from their help; even if you're just feeling stressed or confused or uneasy and you don't know why, you can almost certainly benefit from their help and advice. Mental Health and counseling services are always free for students!
+
+If you're concerned that Mental Health will insist on prescribing you medications, and this concern is preventing you from going to see them, then perish the thought. Our experience shows that most interactions with Mental Health will simply involve meeting with someone who can offer you sympathy and solid advice, and can point you in the direction of useful resources. If after several meetings you are diagnosed with a medication-treatable disorder, the choice is yours whether or not to accept the medication (unless you are a serious danger to yourself or others). 
+
+To get in touch with the mental health center, call 617-253-2916 (or 32916 from any campus phone). You can call this number at any time. There are also walk-in hours from 2-4 on weekdays. Their offices are in E23, the entire third floor of MIT Medical. 
+
+You can also use the MIT extended student health insurance plan to visit an outside mental health practitioner. The first 12 sessions will be fully covered.
+
+You can also always talk with the people you live with, especially if that's easier for you than going to mental health. People here are really understanding about it---we all go through it at some point---so go ahead and deal with any problems that come up instead of trying to pretend/ignore them away. Ignoring them or pretending they're not there often just make them worse, so it's better to deal with them right away.
+\end{subpart}
+
+\begin{subpart}{Sexual Health}{catherio}
+  If you do choose to be sexually active at all during your time at
+  MIT, one of the best choices you can make for yourself is to take
+  care of your sexual health.
+
+  In addition to the usual warnings about pregnancy and sexually
+  transmitted diseases (which, by the way, can be transmitted by
+  bodily fluids even without vaginal intercourse! the more you know!), there
+  are some lesser-known tips. For example, you should only use
+  \emph{water-based} lubricants with a latex condom, because oil-based
+  lubricants like hand creams, massage oils, Vaseline, and so on can
+  cause a latex condom to leak or break, and only some silicone-based
+  lubricants are compatible with condoms so you should check the
+  label. Additionally, you should make sure to keep your sex toys
+  clean, and if you must share them always use latex condoms on
+  them. A short list of this and other advice can be found at
+  \url{http://web.mit.edu/lbgt/lavender/sti.html}, which I highly
+  suggest you consult if you choose to be sexually active.
+
+  It's well worth noting that testing for sexually transmitted
+  diseases (STDs) is free for all students at MIT Medical, and is
+  extremely simple. It's generally recommended that everyone sexually
+  active get tested about once a year, and it's also a good idea for
+  you to get tested before you start having sex with a new partner
+  (and ask him/her to get tested, too!) Appointments for STD testing
+  can be made through your primary care provider by calling 617-253-4481,
+  or, for female students, through the Obstetrics \& Gynecology
+  Service (617-253-1315).
+
+In the case of sexual assault please be aware that you have many resources and support available to you. It is advised that you contact the MIT Police; their immediate concern is your emotional and physical well-being. They will make sure you get medical support if you are injured. MIT police can supply you with advice in a confidential manner.
+
+Specially trained officers, most of them women, are available 24 hours a day for all complaints of rape, sexual assault or harassment. They can provide you with informal advice in a confidential manner or guide you with a formal complaint. Please contact the VPR, MIT's Violence Prevention and R esponse 24 hour hotline (617)253-2300 for further information.
+
+\end{subpart}
+
+\begin{subpart}{Misc.}{mcreedy, ekate, alcor}
+  Find a multivitamin you like and take it daily. It's amazing how
+  much of a difference that can make on your health when you're
+  stressed and otherwise not caring for yourself properly. This goes
+  double for vitamin C, which protects your immune system. Vitamin C
+  can help kill a sickness when it comes on. Be careful, though: some
+  people just chug 20+ tablets when they get sick and then they throw
+  up neon-colored vomit. Oh, and they are still sick. So, take one
+  daily; prevent the pain. Also keep in mind that a healthful diet
+  with plenty of fruits and vegetables can go a long way for keeping
+  you healthy.
+\end{subpart}
+
+\newpage\section{Academics}
+
+\begin{subpart}{Switching Classes}{mcreedy, kchen, gauravjs}
+If you want to switch classes, you will need to fill out an Add/Drop form online.\footnote{\url{https://studentformsandpetitions.mit.edu/sfp/student/myForms.htm}} If you want to \emph{add} a class, you will need to get permission from the professor of the class and your advisor, unless it is the first week of the class, in which case you only need your advisor's permission. You don't need the professor's permission to \emph{drop}, but you do need your advisor's. The online system automatically contacts your professor/advisor for their permission, but it is highly recommended that you inform both your advisor and the professor of the class of what you plan to do, regardless of whose permission you need.
+\end{subpart}
+
+\begin{subpart}[Pass No/Record]{Pass/No Record (AKA The.Best.Thing.Ever)}{taylors}
+For your first semester, you are on pass/no record. If you pass a class, it appears as P on your transcript, and if you fail, it won't appear on your transcript at all\footnote{Med schools may still ask and expect you to release these grades to them.}. This gives freshman some time to adapt to MIT: build study habits, make friends, try student groups and other extracurriculars. Try out new things, and try to find clubs for things you already know you like.
+
+Pass/No Record has its own dangers, however. For some people, the lack of pressure means they end up developing bad study habits and go into their second semester (which is on A/B/C/No Record unless you have early sophomore standing) without an idea of what an MIT workload is really like. Be careful!
+
+% For your first semester, you are on pass/no record. That means that if you pass, your letter grade doesn't matter, and if you don't, no one ever knows! (Except med schools, but if you're not a pre-med then you don't need to worry about it.) So this means you can party all night and never study! ...Actually, NO. What this \emph{is} good for is that you can build good study habits, get enough sleep, and try out a ton of activities (to pick out which ones you will stick with) but you won't have to worry if you do a little too much. Don't wait until the last minute to study, though, even if you'll still pass with a C. Because then next semester, when you have actual grades, you'll have bad study skills and you won't even know the material that's the basis for your classes.
+
+% As a corollary to this, try out tons of activities. Some that sound cool take tons of time, and others that may sound only so-so turn out to be tons of fun with low time commitment. So your first semester is a good time to try out anything you think you'll like, so that later you know which ones you actually want to participate in.
+\end{subpart}
+
+\begin{subpart}{Book Exchanges}{mcreedy}
+There are several good places to get discounted books. Alpha Phi Omega (a co-ed community service fraternity) runs the APO Book Exchange every year in the student center, with the books also listed online at \url{http://apo.mit.edu/bookex/}. You can also check \url{http://bookX.mit.edu} and \url{http://www.mit412.com}. The following link in the Tech from a year ago lists multiple different places that offer book selling and exchanging: \url{http://www-tech.mit.edu/V127/N35/booktable.html}
+\end{subpart}
+
+\begin{subpart}[IAP]{IAP \tiny{(officially known as Independent Activities Period; alternatively: Infinitely Awesome Period)}}{mcreedy, catherio,ktatar}
+The Independent Activities Period is a mini-semester that we receive in the month of January. You can take up to 12 credits worth of classes, but this time is also great for enjoying all the aspects of MIT that you're too busy for during term. There are also PE classes available during IAP, to help get your four PE classes done. When you start getting more classes per term, it'll be harder to fit them in, so take advantage of the fact that you can take multiple PE classes during IAP\@. Also, many fun events and talks take place during January; for example, MIT's Mystery Hunt (one of the biggest puzzle hunts in the world) runs every January during MLK weekend. If you look around---and you don't have to look hard---there is a whole slew of activities going on during this month, such as the Assassins Guild Ten Day (a 10 day long live action role playing game).  The MIT Outing Club has Winter School- if you show up to the first two intro lectures, you can go on hiking, ice climbing, and back-country skiing trips each weekend.   IAP is also a great time to work on a UROP or even just to relax and work on private projects for a whole month. You can find the index of IAP activities at \url{http://web.mit.edu/iap}.
+\end{subpart}
+
+\begin{subpart}{PE Classes}{mcreedy, gauravjs, dukhovni}
+You have to take four PE classes as part of the GIRs. This sounds easy (and fun!) but becomes significantly more challenging in later years, when schedules get very full. PE classes use a first-come-first-serve registration process, and some popular PEs fill up less than a minute after registratin opens. So, you should find what PE classes you want to take before registration begins. Last year, registration began on August 27 and ended on September 3. You may also sign up for a waitlist for a class that is full.
+
+If you forget to register, or want to switch PEs, show up early for the class you want to switch into. If the instructor has room, he/she will probably let you join, and then you can just attend the first class as normal. Make sure you don't skip a PE, though, because many classes require attendance the first day for safety training.
+
+Also, if you have trouble or think you may have trouble fitting in your PEs, you can take as many PE classes as you want over IAP\@. This is generally a great idea to get a few out of the way, since you'll have more time anyway.
+
+MIT also requires each student to pass the swim test or take a swimming class. To take the swimming test, there are drop in test times at 8 am or 8 pm on Tuesday, Wednesday, and Thursday.
+\end{subpart}
+
+\begin{subpart}{Early Sophomore Standing}{shawest, catherio, mats\_a, mgersh}
+To be eligible for sophomore standing, you need to have completed 25\% of the undergraduate requirements. That pretty much equates to having taken 4 of the GIRs, and at least 1 CI-H and having at least 100 units\footnote{Some sources will say 96 units, but one of the authors has tragically and empirically demonstrated that 96 units is not quite enough.} by the end of your first semester. If you have satisfied all of the requirements, you will get an email some time before second semester telling you that you've qualified, and you will have to decide whether you want to accept. If you accept, the Institute now thinks you're a sophomore and you are one semester ahead of your peers (don't worry, this doesn't mean you have to leave a semester early, too). This means that you are no longer on the credit limit, your second semester is the full-fledged ABCDF grading rather than the typical ABC/no record that second semester freshmen get, and you will get to declare your major a semester early (which also means you get your major advisor in place of your freshman advisor). Before taking this opportunity up right away, though, give it some thought: why do you want to be a sophomore a semester early? If you want to take more classes over the credit limit, consider how busy you felt the previous semester. Remember: MIT is hard. And it is really easy to overload yourself if you are not careful and take too big of a workload. The average number of classes taken per term is four, so you are not behind if you adhere to the freshman credit limit. Don't hesitate to talk to upperclassmen and your advisors before making this decision.
+\end{subpart}
+
+\begin{subpart}{The HASS requirement}{codetaku, starg, ltchin}
+Overall, eight total HASS classes and a concentration are required. Two of these have to be CI-H's, which are classes that have in-depth writing requirements. You'll have to get one done by the end of your freshman year. Depending on your background, you may need to take the Freshman Essay Evaluation (FEE) during Orientation. Don't study for it - it's just to determine whether you would benefit from a class with more writing (CI-HW). 
+
+You need to take one each from the 3 HASS categories---humanities, arts, and social sciences. This designation is listed in the course catalog (\url{http://student.mit.edu/catalog/index.cgi}). Two semesters of a for-credit music group (MITSO, Concert Choir, etc) count as a HASS-A.  (For a maximum of four semesters).
+
+The rest of your HASS classes are usually to fulfill your concentration - each concentration has their owl requirements. You can double count classes for any of these categories (ex. one class can satisfy a CI-H and your concentration requirement), but you have to take at least 8 classes overall.
+
+Information about the HASS requirements can be found at \url{http://web.mit.edu/hassreq/}
+\end{subpart}
+
+\begin{subpart}{Choosing Classes}{catherio, mats\_a, shawest, lilychen}
+During the pre-registration period, you can use the registrar's catalog to graphically arrange a proposed schedule as you browse classes. To use it, first look up a class from this site: \url{http://web.mit.edu/catalog/subjects.html} and find a class you want to take. If you click the icon next to the class (a leaf if it is Fall term, a flower if it is Spring, a snowflake if it for IAP, and a sun if it is Summer) and it will list the class under the ``my selections'' link and map the class out on a schedule so you can see how it fits with all of your other classes---it saves your selections so you can view several at once. Alternatively, you can use the MIT Course Picker at \url{http://picker.mit.edu/} to map out your schedule. Picker is often more useful because it includes lab and recitation sections, whereas WEBSIS doesn't. However, Picker occasionally misses classes that are on the MIT course catalog. A couple other useful websites for picking classes are \url{http://planner.mit.edu}, which gives different possible schedules for a set of classes, and \url{https://courseroad.mit.edu/}, which allows you to plan classes for all your time at MIT.
+\end{subpart}
+
+\begin{subpart}{Course Evaluations}{catherio, shawest}
+When choosing courses, it is often useful to have a look at the course evaluations to see what reputations classes have. Course evaluations can be found at \url{https://web.mit.edu/acadinfo/sse/courses/course#.html}---where $\#$ is the number of the major you are looking for (e.g., if you want evaluations for 8.044, $\#$ would be 8). Additionally, course 6 classes are also evaluated in HKN's Underground Guide to Course 6, which can be found at \url{https://hkn.mit.edu}. While course evaluations are a useful gauge to get a feel for a class, remember not to take them as dogma; poor reviews one semester might mean the professor was just having a poor term and good reviews another semester might just mean the professor released nitrous oxide into the air during lecture.
+\end{subpart}
+
+\begin{subpart}{Switching Recitation Sections}{catherio, mcreedy, danyuan}
+If you don't like your recitation instructor, visit other recitations until you find someone you like better and ask if you can switch, since you often can (but not always). It is also often okay to go to a different TA's recitation section, although you might want to talk to both TAs before doing so.
+
+Switching recitation section is something you should not underestimate. TAs vary, and while most of them try to do a good job, some people are naturally better at teaching than others or having teaching styles that suit you better. In some classes, most of the explanations occur in recitation. If you find yourself in such a situation where much of the material is taught in recitation and your TA just isn't getting it through to you, switch recitations ASAP\@.
+\end{subpart}
+
+\begin{subpart}{Office Hours}{catherio, ltchin}
+Office hours are your best friend. Your professor / TA is setting aside time for you to ask any questions that you may have - but most people don't even go to them! Most TA's don't see anyone come to office hours, so they're happy to see anyone. It's helpful but not necessary if you've already started the pset or come up with questions, to make the most of the time.
+
+You can go to office hours even if you're not falling behind or having
+trouble. You can go to office hours to work even if you don't have specific
+questions for your prof. You can go to any TA's office hours, not just yours,
+which is useful if you can't make your TA's office hours.
+\end{subpart}
+
+\section{Food \& Money}
+\begin{subpart}{TechCash}{mcreedy, mats\_a, kchen, catherio, dukhovni}
+Some people find TechCash to be a useful tool. You add money to your MIT ID card, and then use it like a debit card for many locations on campus. You can do this using your credit card, or have the money deducted from your Bursar's Account (the same one you pay off tuition through). You can also buy TechCash with Bitcoin. You can do this online at \url{https://techcash.mit.edu}, but there is a fee. You can do it for free at the Card Offices in the basement of the Student Center (W20). As long as you pay off the amount on the Bursar's Account by the next pay date after it shows up, you don't get charged interest. 
+
+Account balances are carried over from semester to semester and year to year. MIT reserves the right to cancel any account not used for a 120-day period. If an account is not used for 4 months, it
+will be canceled. If it has less than \$10 then MIT will take it without warning and refuse to return it; otherwise excess funds will be mailed as checks to your home address.
+\end{subpart}
+
+\begin{subpart}[Finding Food]{Finding Food \& Restaurants and the Whatnot}{mcreedy, ktatar}
+Finding food can be a little confusing when you first get to MIT\@. Shaws, AKA Star Market, is just a block from Random, is a full grocery store and is open from 7am to 12am (midnight). Restaurants near Random can be found just by walking up and down Mass Ave, but especially notable for being open late are Cinderella's (open until 1am), Chicago Pizza, (open until 4am), Beantown Taqueria (open till 11pm Sun-Wed, 4am Thu-Sat), Clover (open 24 hours), and the gas station convenience store next to us (open all night).
+
+On West Campus, the Student Center has multiple restaurants in it, and LaVerde's is open all night during term. MacGregor also has a convenience store that's open until 2am, and you can get in without passing into the locked part of the dorm. There are also all the dorm dining halls (Maseeh, McCormick, Baker, Next, and Simmons) which you can eat at even if you're not on the dining plan.
+
+If you're in main campus, Steam Cafe on the fourth floor of building 7 is tasty, Cafe Four can provide a quick bite on the run, Stata has a pretty good cafeteria, and the Koch cafe in building 76 (the cancer center near Stata) has good food as well. Also in the Kendall area, Kendall Square has restaurants, and the food trucks east of MIT medical are delicious and cheap.
+\end{subpart}
+
+\begin{subpart}{Getting Groceries}{ekate, sweettea, alcor, catherio, gauravjs}
+Other grocery stores besides Star include Trader Joe's, Harvest Co-op, Whole Foods, and H-Mart. H-Mart is a Korean grocery store in Central, and is sometimes cheaper than Star and has some different selections. Trader Joe's is often cheaper than Star and has better quality food, but is a bit of a walk.  Harvest Co-op is another option: it's not any cheaper then Star, but its food is organic and awesomely delicious. Whole Foods sells very tasty, often-organic food, but it can be expensive. It can be found on Prospect Street, northeast of Central Square. 
+
+For fresh produce, there is a produce stand at State which operates on Tuesdays. Further afield, Haymarket (on the orange line) has considerably cheaper vegetables and fruit in warm weather, but it is really far away. 
+
+Another option for produce are farmers' markets and farm shares. There is a farmers' market that is open April--October Monday afternoons in the backside of the Harvest Coop. Additionally, Red Fire Farm (redfirefarm.com) has an excellent CSA program where you can buy a season-long farm share in February or March and then get a lot of fresh, organic veggies every week for the summer and fall months. 
+\end{subpart}
+
+\begin{subpart}{Cooking and Fires}{pweaver, ninadm}
+  
+  Eating healthily will make you happier. With access to kitchens and
+  grocery stores you have many options for eating healthily.  However,
+  when cooking don't burn down the dorm.
+
+  Keep an eye on the food you are cooking, don't leave the burners on
+  and do something else. A cat nap or an extra zero on the microwave
+  can mean the difference between burning down the dorm and not.
+  
+  In the event of:
+
+  \textbf{Smoke:}\\Open the windows, Avoid opening doors. See below
+  for further instructions.
+
+  \textbf{Small Fires}\\
+  \emph{In the oven:} Leave the oven door closed and turn off the heat.\\
+  \emph{In the microwave:} Leave the door closed, stop the timer, and
+  unplug the machine (IF you can reach it safely)\\
+  \emph{In the pan:} Slide the lid over the pan, using an oven mitt,
+  and turn off the heat. DO NOT move the pan until it is completely
+  cool.\\
+  \emph{Grease:} Baking soda on flames and Class B fire extinguisher
+  at base of flames. DO NOT use water.\\
+  \emph{Electrical:} Baking soda on flames and Class C fire
+  extinguisher at base of flames. DO NOT use water.
+
+  \textbf{Large Fires}\\Pull the alarm and exit the building.
+
+  If you happen to set off the fire alarm, exit the building and wait near the 290 door.  When the firefighters arrive, let them know the source and location of the smoke.  You will not get in trouble and telling them where to look and what to look for will speed up the process of letting us all back into the building.
+
+
+
+\end{subpart}
+
+
+
+\section{Email and Computing}
+\begin{subpart}{Email Clients}{dukhovni, taylors}
+  Instead of using webmail to check your MIT email all the time, you
+  have several options which will probably be more convenient for
+  you. You can download and set up a traditional email client such as
+  Outlook, Thunderbird, or Evolution; for information on doing so, see
+  \url{https://ist.mit.edu/email-config-wizard}. You can use
+  a command line email client such as {\tt alpine} from Athena, which
+  works without additional configuration. You can set up a Gmail
+  account to access your MIT email account. Or you can set up ``split
+  forwarding,'' having your MIT inbox retain a copy of each
+  received email while forwarding a copy of the email to whatever
+  other account you want.
+
+  You can set up split forwarding with the Athena command {\tt chpobox
+    -S my-other@email.com}, and plain forwarding (where your MIT
+  account doesn't hold on to copies of the forwarded messages) with
+  {\tt chpobox -s my-other@email.com}. For more details, see
+  \url{http://ist.mit.edu/services/email/forward}.
+
+  If using a client that supports IMAP, you'll be able to send emails
+  with your MIT email address on them. If you're using Gmail, you can
+  still set this up. From settings, go to Accounts and Import, and
+  create and add your MIT address, setting outgoing.mit.edu, port 465,
+  SSL encryption for outgoing settings, and use your kerberos and
+  password. Uncheck ``Treat as alias.''
+\end{subpart}
+
+\begin{subpart}{Mailing Lists}{mcreedy, ekate, oremanj}
+There are two types of mailing lists in use at MIT\@.
+
+{\bf Moira lists} are lightweight, easy to create and administer, and
+are basically just a shortcut for emailing a list of names. Anyone can
+send mail to them, and people commonly create them for things like
+problem set groups. This should probably be your first choice if you
+want a mailing list.
+
+To add yourself to a Moira list (or do anything else to a Moira list
+for that matter), you can either go to \url{http://web.mit.edu/moira}
+for the web interface, or use the {\tt blanche} or {\tt listmaint}
+commands on Athena. Upperclassmen will often tell you to ``blanche
+yourself on'' to a list as a shorthand for saying ``add yourself'' but
+you can use whatever tool you find most convenient.
+
+{\bf Mailman lists} are heavier-weight; they can be moderated,
+archived, and so on. To create one, go to
+\url{https://listmaker.mit.edu/lc/}; to subscribe to one, go to
+\url{http://mailman.mit.edu/mailman/listinfo/LISTNAME}, replacing {\tt
+  LISTNAME} with the name of the list (the part before {\tt
+  @mit.edu}).
+
+Some Moira lists are ``private,'' and you will seem to be unable to
+add yourself at all. In this case, you can look up the list moderators
+online (the ``Owner'' field), and then e-mail them (not the whole
+list!) in order to get added.
+\end{subpart}
+
+\newpage\begin{subpart}{Email Etiquette}{mcreedy, alcor, oremanj, taylors}
+  Try to send emails to only the relevant people or lists --- use
+  discretion when emailing larger lists or collections of lists.
+
+  Emailing all the dorm lists is a relatively common way for
+  organizations to advertise events. If you get involved in student
+  groups you will probably wind up doing so on their behalf at some
+  point. When you do, please \emph{BCC} (Blind Carbon Copy) the lists,
+  and put your organization's email address in the To field. Every
+  address listed under BCC receives a copy of the email but will not
+  appear to the other recipients. 
+
+  Finally, train yourself so that by default you use ``reply,'' not
+  ``reply-all.'' It's a lot less embarrassing to have to resend an
+  email because you forgot to CC the appropriate audience than it is
+  to accidentally send a private reply to your entire dorm, or worse.
+\end{subpart}
+
+\begin{subpart}{Useful Mailing Lists}{ekate, ltchin}
+\begin{itemize}
+\item \textbf{eecs-jobs-announce} (Mailman list): Job postings in course 6 are often
+  sent to \nolinkurl{eecs-jobs-announce@csail.mit.edu}. This mailing list receives every
+  UROP or other job listing received by the course 6 undergraduate
+  office. To get on the jobslist, just add yourself to the mailing list at \url{https://lists.csail.mit.edu/mailman/listinfo/eecs-jobs-announce}
+\item \textbf{free-food} (Moira list): Similarly, you can get on
+  free-food, which will notify you about free food left at MIT---often
+  large quantities left over from events and the like.
+\item \textbf{reuse} (Mailman list): People post to reuse whenever they have stuff that they are giving away, ranging from clothes and Christmas lights to decent computer hardware and microwaves. There are sister lists \textbf{reuse-ask}, \textbf{reuse-sell}, etc. These lists get a \emph{lot} of traffic---be prepared to set up a filter!
+\end{itemize}
+\end{subpart}
+
+\begin{subpart}{Athena}{ekate, mats\_a, gdb, oremanj, dukhovni}
+Helpful hint: Learn to use Athena. One source of clue is SIPB's documents at \url{http://sipb.mit.edu/}. If you've used the command line on Linux or Mac OS X before, you'll find a lot that's familiar; the current version of Athena is based on Ubuntu Linux.
+
+To log in remotely, type {\tt ssh yourusername@athena.dialup.mit.edu} into a terminal (on Windows, use an SSH client such as PuTTY). You have webspace in your $\sim$/www folder which maps to \url{http://www.mit.edu/~username/}; this can only host static content. To host a more complicated website, look at \url{http://scripts.mit.edu} for ways SIPB has made it easy to host dynamic websites and prepackaged content (like WordPress for a blog). You can also use Athena to change your mailing list memberships and otherwise manage lists, using the {\tt blanche} command (faster) or {\tt listmaint} (menu-based).
+
+You can install Debathena on your computer to access all the power of Athena without going to a cluster or using SSH\@. For instructions on doing so, see \url{http://debathena.mit.edu/}
+
+To transfer files between your home computer and Athena, you can use the {\tt scp} command if you run Linux or Mac, or use an sftp client such as SecureFX from MIT's software download page if you run Windows. You can also use AFS, the distributed file system where all of your files on Athena are stored. For more information on AFS, see \url{https://sipb.mit.edu/doc/afs-and-you/}; to get a client to access AFS from your own computer, see \url{http://openafs.org/}.
+
+\end{subpart}
+
+
+\section{Living Groups}
+\begin{subpart}{FSILGs}{mcreedy, ktatar}
+Go check out some events for Fraternity Rush! Even if you don't plan to pledge a fraternity (or are a girl), as long as you have a freshman guy with you, the fraternities are quite happy to have you come visit. Bigger events make them look more attractive to prospective pledges. And many of the fraternities spend between \$20,000 and \$30,000 on the two weeks of rush. No, I didn't misplace a zero there. So take full advantage of it!
+
+There are two co-ed fraternities: Tau Epsilon Phi (tEp) and Number 6.  tEp is worth visiting to see their house in Boston (featuring crazy light shows, musical staircase, hanging couches, a whale net, and more). They take pride in not being a typical frat. Number 6 is a literary fraternity on Dorm Row, and has a lot of international students.  
+
+If you are a woman and like the idea of having a support network of sisters, consider going through recruitment. Formal recruitment is unfortunately not as fun as Rush: it consists of long days of talking to people and is very structured to make the process fair and balanced.  Sororities are usually much larger than frats and the majority of members do not live in the sorority house. AEPhi (and possibly a few others, depending on the year) does informal recruitment, but it's recommended that you at least go to the first day of formal recruitment.
+
+Rush isn't just for checking out Greek organizations, it's for Independent Living groups too.  WILG (Women's Independent Living Group) is just down Mass Ave.  pika is a 15 minute walk away at 69 Chestnut St, and is home to chickens and cats along with wonderful people.  Even if you have no interest in moving there, you can still join their meal plan (delicious home-cooked meals, there are always vegan options!) which is *free* for your first quarter. Epsilon Theta (ET) is in Brookline, and many residents have overlapping interests with Randomites (LARPing, board games, etc). Student House and Fenway House are two more ILGS, both in Boston.
+
+
+\end{subpart}
+
+
+\section{Transportation}
+\begin{subpart}{The MBTA}{haoqili, catherio, gauravjs}
+  The MBTA, known as ``The T'', is an easy way to get around
+  Boston. The nearest stop to Random is Central Square, north of us
+  along Mass Ave. The nearest stop to the rest of campus is Kendall
+  Square, east of the Stata center on Main Street.
+
+  Your MIT ID card is also a Charlie Card, and can be used to store MBTA fares on it. You can load it with money at any T station.
+
+  If you plan to ride the T a lot, you can get a monthly T-pass for
+  half its regular price (\$29.50 instead of \$59) at:
+  \url{http://web.mit.edu/facilities/transportation/tpass.html}. Note
+  that you should apply for ``Link Pass'' and that the deadline is a
+  few weeks before the month actually starts.  If you would like a
+  pass but it's already past the deadline, you can go into the
+  transportation office in the basement of the student center to pick
+  up one of the 100ish extra monthly passes.  These run out quickly in
+  the last week prior to the start of the month.  Call the office for
+  more information.
+\end{subpart}
+
+\begin{subpart}{Bus Routes}{sweettea, gauravjs}
+It is worth noting that the 64 and the 70 both stop at University Park (right behind Shaw's), so you can go to Watertown and Brighton/Allston without having to walk any. The 1 bus also travels up and down Mass Ave, from Harvard Square into Boston, and has a stop very close to Random.
+\end{subpart}
+
+\begin{subpart}{Saferide}{kresh426, ktatar, dukhovni}
+MIT also offers a saferide bus that is free to students. Saferide operates two schedules: a regular schedule and a holiday schedule. Hours of operation are 6 pm to 2:30 am Sunday through Wednesday, and until 3:30 am Thursday through Saturday. There are a few different lines, but they all stop at the student center. The Cambridge West \& Brookline line loops by the MIT Museum (across from Random), and you can use it to go to ET or ZBT, or to get back from pika. The MIT mobile app (\url{https://ist.mit.edu/mit-mobile/android-ios}) will show you mostly-accurate schedules for Saferide.
+\end{subpart}
+
+
+\section{Help}
+\begin{subpart}{Student Support Services (S$^{3}$)}{mcreedy}
+The Student Support Services office is in charge of being YOUR advocate should anything come up that is interfering with your work. These are the people who give sick notes, mental health notes, excuse you from class for family emergencies, and so on. If something comes up and you just can't finish a pset, or have to miss a test, they're the ones who can get a makeup exam for you, or get an extension on the pset, or get the grade removed (so you'd have one less pset grade for the semester). They can reach out to professors; while they can't force a professor to do anything, they are amazing advocates for students. You DO have to give them a reason, but they're pretty understanding about most things that come up. Just stop by or call them to make an appointment; if it's urgent, GRTs and housemasters can help. They also have walk-in hours; stop by room 5-104 between 9am and 10am any weekday.
+
+S$^3$ can help with troubles caused by a wide-ranging variety of issues; most people who go are prompted by a combination of academic and personal matters. They are sympathetic, helpful, and a powerful advocate for students---use them!
+\end{subpart}
+
+\begin{subpart}{Dean on Call}{mcreedy}
+For major emergencies in the middle of the night, MIT has a dean on-call at all hours. If something comes up between 5pm and 7am, then you should dial 100 from any campus phone (or 617-253-1212 from a cell phone). Ask for the dean on call, and you'll be rerouted to one of several people who can help you. The deans on call are intended for ``student matters related to medical and mental health emergencies/crises, incidents of serious injury or death of a student, incidents related to serious physical facility emergencies affecting students, and any other emergency that affects student welfare.'' Other middle-of-the-night crisis resources can be found in Mental Health, above.
+
+% Nightline no longer exists :-/  --oremanj 2011
+%Note that this is particularly for major emergencies. If you have a problem that you just want to talk with someone about, or ask advice, you can call Nightline. Nightline is a hotline that is staffed all night by students, specifically for people who just need someone to talk to in the middle of the night. You can reach them by calling 38800 on any campus phone, and they will be happy to talk with you no matter the reason you called.
+\end{subpart}
+
+\begin{subpart}{Random's awesome supports}{taylors}
+Your GRTs, housemaster, and RLAD are all here to help you. No, really. If you have ANY problems, of ANY type, get in touch with them. They will get you whatever help you need, without asking questions; that is, in fact, their job. So if you have a problem you need help with, no matter what it is, go to one of them before it becomes a bigger problem.
+\begin{itemize}
+\item Nina Davis-Millis, \texttt{ninadm}: Housemaster
+\item Michael Barcelo, \texttt{mbarcelo}: RLAD
+\item Phil Arevalo, \texttt{parevalo}: GRT for Bonfire, Clam, Pecker
+\item Nora Xu, \texttt{noraxu}: GRT for BMF and Loop
+\item Shaiyan Keshvari, \texttt{shaiyan}: GRT for Black Hole, Destiny, and Foo
+\end{itemize}
+\end{subpart}
+
+\begin{subpart}{Losing Things}{mcreedy}
+If you lost your ID Card, check the Card Services office. They keep lost cards that are brought to them. If you find a lost ID card you should take it there. If you lose anything else, check with the MIT police. They keep a lost and found in their station. A list of found things can be found on their website, and you can even post things you lost so they can get in touch with you if it's found.
+\end{subpart}
+
+
+\section{Random Specifics}
+
+\begin{subpart}{Mailing Lists}{keach, mats\_a, shawest, ekate, dukhovni}
+You can get a list of Random Hall-related mailing lists by checking out random-hall-list-of-lists (just look it up on \url{https://web.mit.edu/moira/} or type ``{\tt blanche random-hall-list-of-lists}''). Many of these lists aren't in common use any more, and the list is rather extensive, so here are three of the more useful ones to know:
+\begin{itemize}
+\item \textbf{random-hall:} This list is only used for official Random Hall business. You shouldn't send mail here unless you know otherwise
+\item \textbf{random-hall-talk or r-h-t:} This is the dorm's social mailing list. If you want to organize a food mob, say something to the residents of the dorm and people who hang out here, or anything of a similar nature you can send it to this list. r-h-t is an alias of random-hall-talk.
+\item \textbf{random-desk:} If you have a message you need to get to the desk workers, send it here
+\end{itemize}
+There are plenty of other mailing lists that are fun to know about, so keep your eyes peeled and don't hesitate to ask upperclassmen about some of their favorite lists.
+\end{subpart}
+
+\begin{subpart}{The Front Desk and Security}{gauravjs, dukhovni, ninadm}
+You may have noticed the Allied Barton employees at the front desk. This is their second year here, replacing the student desk workers. Their job is to log everyone who comes in the building, either by having them tap their MIT ID, or by viewing government issued ID. 
+Note that this means that everyone entering the building must have some form of ID. All residents and people on the express guest list must tap their IDs each time they enter the building; your ID will open both the outer and inner doors on both the 290 and 282 side of the building.  All other guests must come by desk each time they enter and check in.
+
+If you lock yourself out of your room or misplace one of your keys, you can also check another key out from the Allied Barton employee at the front desk temporarily.
+\end{subpart}
+
+\begin{subpart}{The Student Desk worker}{pkoms, shawest, oremanj}
+
+  (Student) desk provides useful services that you can check out,
+  including DVDs, vacuums, the i3 camera, and keys for the trunk room,
+  shop, and EE lab. Most of these require a non-MIT ID as collateral
+  (a drivers license or any similar thing with your name and a picture
+  of your face on it). Desk is also where you pick up packages.
+
+  Desk also maintains a guest list for each resident. You can update
+  yours by talking to the student desk worker or emailing
+  \texttt{random-desk} . You have 15 regular guest-list slots and 5
+  express list slots. Anyone on a resident's guest list can get into
+  the dorm by talking to the desk worker between 8 am and midnight,
+  and express guests can tap their IDs between 8 and midnight to get
+  in. Express guest lists can only be changed once per semester at
+  specific times.
+
+  Desk is open from 0800--2400 on Sundays through Thursdays, 0800--2600
+  (2am) Fridays and Saturdays.
+
+\end{subpart}
+
+\begin{subpart}{Soda fridge}{keach, shawest}
+You may have noticed that big locked fridge in Foo (the one behind desk, not the one in the kitchen---that belongs to the residents of Foo). That is soda fridge. It contains soda and non-soda drinks as well as non-drink items such as ice cream bars and candy bars. You should check it out some time to see what it has. You can get the key from the desk worker and when you find something you want to buy, give the desk worker the money or ask the desk worker to take the money off your tab (if you don't have a tab yet, ask the desk worker to make one for you).
+\end{subpart}
+
+\begin{subpart}{Recycling}{jhamon, shawest, alcor}
+You see those big blue plastic containers throughout the dorm? The ones labeled for recycling? Surprisingly, those are for recycling. Random now has single-stream recycling, so all recyclables can be thrown together, which simplifies things quite a bit. Also of note: things that are oily, greasy, waxy, or foody are not recyclable---even if they are made of an ordinarily recyclable material. This means no pizza boxes or popcorn bags, for example.
+\end{subpart}
+
+\begin{subpart}{Places to stay for visiting Relatives}{kimfad}
+Parents usually like to visit at the same time as all the other parents (beginning of the year, graduation, etc.).  This makes the hotel rooms more expensive.  There is an awesome bed and breakfast right across from the Central Square Whole Foods called Prospect Place.  It's in a \emph{great} location, relatively cheap (rooms start at \$140/night), and super nice.  Wifi, yummy breakfast, Victorian furnishings, big rooms, and a nice owner. You can find more information about it at \url{http://www.prospectpl.com/}
+
+Another bed and breakfast in the area is Whitman House. They exist to make money for the nonprofit Search For  Cure.  They are also conveniently located near Central Square.  Rooms start at \$130/night. More information can be found at \url{http://www.whitmanhouseinn.com/}.
+
+There are also many hotels in the area. More information can be found at \url{http://web.mit.edu/institute-events/visitor/stay.html}.
+\end{subpart}
+
+
+
+\end{document}

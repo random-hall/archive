@@ -1,0 +1,46 @@
+/* Global Settings */
+
+body {
+  background-color: #fff;
+  color: black;
+  /*font-family: Verdana, Arial, Helvetica, Sans-Serif*/
+  font-family: Bookman, serif;
+}
+
+a:active {
+  color: #00f;
+}
+
+a:visited {
+  color: #0cf;
+}
+
+a:link {
+  color: #09c;
+}
+
+a:hover {
+  color: salmon;
+}
+
+/* The Navigation Menu */
+
+#menubar a {
+  font-family: Bookman, serif;
+  /*font-family: Verdana, Arial, Helvetica, Sans-Serif;*/
+  font-weight: normal;
+  text-decoration: none;
+  font-size: 16pt;
+  padding: 1pt 5pt 1pt 5pt;
+  letter-spacing: 1pt;
+  line-height: 24pt;
+}
+
+a.navitem {
+  color: #09c;
+}
+
+a.navhere {
+  color: #fff;
+  background-color: #09c;
+}

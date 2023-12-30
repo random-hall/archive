@@ -1,0 +1,95 @@
+body {
+  background: black;
+  font-family: sans-serif;
+  color: navy;
+}
+A:link {
+  text-decoration: none;
+  color: green;
+}
+A:visited {
+  text-decoration: none;
+  color: navy;
+}
+A:active {
+  text-decoration: bold;
+  color: black;
+  background: yellow;
+}
+.head {
+  color: navy;
+  font-size: 24px;
+}
+.subhead {
+  color: navy;
+  font-size: 18px;
+  margin-left: 8px;
+}
+.body {
+  color: black;
+  margin-left: 15px;
+  font-size: 12px;
+}
+.title {
+  color: blue;
+}
+.jump {
+  margin-left: 25px;
+  color: #ffd040;
+}
+.cpjump {
+  color: #ffd040;
+}
+.navbar {
+  background: gray;
+  padding: 0.4em 0;
+}
+.navtext {
+  color: #ffd040;
+}
+.random {
+  color: black;
+  font-size: 28px;
+}
+.hall {
+  color: white;
+  font-size: 28px;
+}
+.address {
+  color: red;
+}
+.describe {
+  color: gray;
+  font-size: 9px;
+  text-align: center;
+  font-weight: bold;
+}
+.copyright {
+  color: gray;
+  font-weight: bold;
+  font-size: 0.75em;
+}
+.seal {
+  background: grey url(seal.gif) bottom right no-repeat;
+}
+
+.navbar:hover {
+  background: #444444;
+}
+
+.current {
+  background: navy !important;
+  color: white;
+}
+
+.headwhite {
+  color: white;
+  font-size: 1.5em;
+  text-align: center;
+}
+
+.computer {
+  color: black;
+  font-family: monospace;
+  font-size: 12px;
+}
